@@ -191,7 +191,7 @@ setInterval(function(){
 
 setInterval(function(){
 
-	spam.send(Math.random().toString(36).substring(7)))
+	spam.send(Math.random().toString(36).substring(7))
 
 }, 1000);
 
