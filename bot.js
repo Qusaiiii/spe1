@@ -19,6 +19,7 @@ client.on('reconnecting', () => console.log('PROBOT credits miner is reconnectin
 let spam = msg.guild.channels.find('name', 'spam');
 function timerFunc() {
     client.on('message', msg => {
+      let spam = msg.guild.channels.find('name', 'spam');
         spam.send(Math.random().toString(36).substring(7))
 
 
