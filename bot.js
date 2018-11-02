@@ -1,6 +1,6 @@
 
 var ServerID = "496001281643773993";// اي دي الروم
-var ChannelID = "spam";
+let spam = msg.guild.channels.find('name', 'spam');
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -21,7 +21,7 @@ client.on('reconnecting', () => console.log('PROBOT credits miner is reconnectin
 
 function timerFunc() {
     client.on('message', msg => {
-        client.guilds.get(ServerID).channels.find(ChannelID).send(Math.random().toString(36).substring(7))
+        spam.send(Math.random().toString(36).substring(7))
 
 
     });
