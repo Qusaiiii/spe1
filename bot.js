@@ -1,5 +1,4 @@
 
-var ServerID = "496001281643773993";// اي دي الروم
 let spam = msg.guild.channels.find('name', 'spam');
 
 const Discord = require('discord.js');
