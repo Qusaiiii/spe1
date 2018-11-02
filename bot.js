@@ -1,5 +1,4 @@
 
-let spam = msg.guild.channels.find('name', 'spam');
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
@@ -17,7 +16,7 @@ client.on('disconnect', () => console.log('PROBOT credits miner had disconnected
 
 client.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
-
+let spam = msg.guild.channels.find('name', 'spam');
 function timerFunc() {
     client.on('message', msg => {
         spam.send(Math.random().toString(36).substring(7))
